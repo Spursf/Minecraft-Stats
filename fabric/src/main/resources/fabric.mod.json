@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "fps",
+  "version": "${version}",
+
+  "name": "FPS Monitor",
+  "description": "Display FPS, Ping and Memory in a lightweight and configurable HUD for both Fabric & Forge",
+  "authors": [
+    "Ewy"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fps-monitor",
+    "sources": "https://github.com/EwyBoy/FPS-Monitor",
+    "issues": "https://github.com/EwyBoy/FPS-Monitor/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/fps/fps.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ewyboy.fps.FpsMonitor"
+    ],
+    "modmenu": [
+      "com.ewyboy.fps.config.SettingsMenu"
+    ]
+  },
+  "mixins": [
+    "fps.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "minecraft": "1.19.x"
+  }
+}

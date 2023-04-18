@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+license="MIT License"
+issueTrackerURL="https://github.com/EwyBoy/FPS-Monitor/issues"
+logoFile="logo.png"
+
+[[mods]]
+modId="fps"
+version="${file.jarVersion}"
+displayName="FPS Monitor"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/fps-monitor"
+credits=""
+authors="Ewy"
+description="Display FPS, Ping and Memory in a lightweight and configurable HUD for both Fabric & Forge"
+
+[[dependencies.fps]]
+modId="forge"
+mandatory=true
+versionRange="[41,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.fps]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19, 1.20)"
+ordering="NONE"
+side="CLIENT"
